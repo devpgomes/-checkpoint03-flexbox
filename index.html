@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinheria Agnello</title>
+    <link rel="stylesheet" href="css/flex-style.css">
+</head>
+<body>
+    <!-- O cabeçalho usa Flexbox para distribuir o nome e o menu. -->
+    <header>
+        <h1>Vinheria Agnello</h1>
+        <nav aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#vinhos">Vinhos</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- O destaque organiza o texto e o símbolo lado a lado. -->
+        <section class="destaque" id="inicio">
+            <div>
+                <p class="etiqueta">TRADIÇÃO EM CADA TAÇA</p>
+                <h2>Um bom vinho transforma o momento.</h2>
+                <p>Conheça nossa seleção e descubra novos sabores.</p>
+                <a class="botao" href="#vinhos">Explorar vinhos</a>
+            </div>
+            <span class="taca" role="img" aria-label="Taça de vinho">🍷</span>
+        </section>
+
+        <section id="vinhos">
+            <h2>Nossa seleção</h2>
+            <p>Três estilos para acompanhar suas melhores histórias.</p>
+            <!-- Flexbox distribui os cards e permite a quebra de linha. -->
+            <div class="lista-vinhos">
+                <article class="card">
+                    <span class="tipo">TINTO</span>
+                    <h3>Cabernet Sauvignon</h3>
+                    <p>Encorpado e marcante, combina com carnes e queijos maturados.</p>
+                </article>
+                <article class="card">
+                    <span class="tipo">BRANCO</span>
+                    <h3>Chardonnay</h3>
+                    <p>Leve e elegante, acompanha peixes, massas e momentos especiais.</p>
+                </article>
+                <article class="card">
+                    <span class="tipo">ROSÉ</span>
+                    <h3>Rosé da casa</h3>
+                    <p>Fresco e delicado, ideal para entradas e tardes entre amigos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre a Agnello</h2>
+            <p>Paixão por vinhos e atendimento próximo: nossa proposta é ajudar você a escolher a próxima taça.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Vinheria Agnello · Projeto acadêmico de Flexbox</p>
+    </footer>
+</body>
+</html>
